@@ -2,7 +2,6 @@
 import os
 
 # 在一行里面获取需要删除的属性
-
 testLine = 'The resource R.string.avl_dialog_updateing appears to be unused'
 
 def find_resource_in_a_line(pline):
@@ -26,7 +25,6 @@ def list_file(rootDir,resource):
 
 
 # 对文件中根据字符串对比后删除某行
-
 def del_resource(file,resource):
 	lines = open(file).readlines()
 	for index,line in enumerate(lines):
@@ -42,6 +40,8 @@ def del_resource(file,resource):
 head = 'The resource R.string.'
 lint_paths = '/home/jet/Documents/work/studio_workspace/branches/supercleanv2/res'
 list_path = '/home/jet/Desktop/list_path/del_paths'
+
+
 # 读取需要删除的文件的列表
 lint_resources = open(list_path).readlines()
 for lint_resource in lint_resources:
